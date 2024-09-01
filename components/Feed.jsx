@@ -36,7 +36,7 @@ const Feed = () => {
 
   useEffect(() => {
     fetchAllPosts(); // fetch posts from the database
-  }, [])
+  }, [allPosts])
 
   const filterPosts = (searchText) => {
     const regex = new RegExp(searchText, 'i');
